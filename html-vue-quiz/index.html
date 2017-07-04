@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="files/index.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <h1>Score: {{ score }} <span v-if="!ended">| Time remaining: {{ timeRemaining }}</span></h1>
+        <button v-if="!isFullscreen" @click="fullscreen()">Fullscreen</button>
+        <button v-if="!started" @click="start()">Start</button>
+        <button v-if="ended" @click="reload()">Restart</button>
+
+        <div v-if="started && !ended">
+            <img v-if="possibleScore < 2" :src="'files/' + info.img">
+
+            <h2>Points for this question: {{ possibleScore }}</h2>
+            <h3>{{ info.i1 }}</h3>
+            <h3 v-if="possibleScore < 4">{{ info.i2 }}</h3>
+            <h3 v-if="possibleScore < 3">{{ info.i3 }}</h3>
+
+            <div class="buttons">
+                <button v-for="n in 4" @click="answer(n - 1)" class="btn btn-half">{{ answers[n - 1] }}</button>
+                <button v-if="possibleScore > 1" @click="possibleScore--" class="btn btn-full">Show tip</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="application/javascript" src="files/ppl.js"></script>
+
+    <script type="application/javascript" src="files/devtools.js"></script>
+    <script type="application/javascript" src="files/vue.js"></script>
+    <script type="application/javascript" src="files/index.js"></script>
+</body>
+
+</html>
