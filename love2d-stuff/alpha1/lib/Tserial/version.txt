@@ -1,0 +1,1 @@
+v.1.5:  http://dl.dropbox.com/u/3713769/web/Love/TLTools/Tserial.lua  (from  https://love2d.org/wiki/Tserial )
