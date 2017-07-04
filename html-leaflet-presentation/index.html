@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pl"> 
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Atrakcje Europy</title>
+
+		<link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAgHyMAAAAAACAfIgAHB+gAEhEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBBAQEAQEEBAQBAQEBAQEBAQEEBAEBBAQBAQEBAQEBAQEBAQQEBAQBAQEBAQEBAQEBAQEEBAACAQEBAQEBAQEBAQQEBAQEBAQEAQEBAQEBAQEBAQEEBAEBAQEBAQEBAQEBAQEBBAQBAQEBAQEBAQEBAQEBAQQEAQEBAQEBAQEBAQEBAQEEBAEBAQEBAQEBAQEBAQEBBAQBAQEBAQEBAQEBAQEBAQQEAQEBAQMBAQEBAQEBAQEEBAEBAQMDAwEBAQEBAQEBBAQBAQMDAwMDAQEBAQEBAQQEAQEDAwMDAwEBAQEBAQEEBAEBAQMBAwEBAQEBAQEBBAQBAQEBAQEBAeMfAADzPwAA+H8AAPh/AADgHwAA/P8AAPz/AAD8/wAA/P8AAPz/AAD89wAA/OMAAPzBAAD8wQAA/OsAAPz/AAA=" rel="icon" type="image/x-icon" />
+
+		<link rel="stylesheet" href="pliki/leaflet/leaflet.css" />
+		<link rel="stylesheet" href="pliki/leaflet.locationlist/leaflet.locationlist.css" />
+		<link rel="stylesheet" href="pliki/leaflet.numbered_markers/leaflet_numbered_markers.css">
+		<link rel="stylesheet" href="pliki/style.css" />
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.ie.css" />
+			<link rel="stylesheet" href="pliki/style.ie.css" />
+		<![endif]-->
+	</head>
+	<body>
+		<div id="map"></div>
+		<div id="zabytek">
+			<div id="zabytek-container">
+				<div id="zabytek-scroll">
+					<div id="zabytek-tlo">
+						<img src="" alt="Nie znaleziono folderu /pliki. Wypakowano?" id="zabytek-foto" />
+						<h1 id="zabytek-tytul"></h1>
+						<div id="zabytek-opis"></div>
+					</div>
+					<div id="zabytek-biale"></div>
+					<div id="zabytek-chowaj"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="pliki/leaflet/leaflet.js"></script>
+		<script type="text/javascript" src="pliki/leaflet.locationlist/leaflet.locationlist.js"></script>
+		<script type="text/javascript" src="pliki/leaflet.numbered_markers/leaflet_numbered_markers.js"></script>
+		<script type="text/javascript" src="pliki/miejsca.js"></script>
+		<script type="text/javascript" src="pliki/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript">jQuery.noConflict();var CARTO_URL = 'http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';</script>
+		<script type="text/javascript" src="pliki/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript" src="pliki/mapa.js"></script>
+	</body>
+</html>

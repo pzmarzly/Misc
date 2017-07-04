@@ -1,0 +1,104 @@
+@font-face {
+	font-family: 'Ubuntu';
+	src: local('Ubuntu'), url(ubuntu.regular.eot);
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: local('Ubuntu'), url(ubuntu.regular.ttf);
+}
+
+html { height: 100%; font-family: 'Ubuntu', sans-serif; font-size: 24px; text-align: justify; }
+body { height: 100%; margin: 0; padding: 0;}
+#map { height: 100%; }
+
+figure {
+	max-width: 33%;
+}
+
+figcaption {
+	font-style: italic;
+}
+
+blockquote {
+	padding-left: 15px;
+	border-left: 3px solid #ccc;
+}
+
+#zabytek {
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	position: fixed;
+	top: 100%;
+	width: 100%;
+	z-index: 1001;
+}
+
+#zabytek-chowaj {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1001;
+}
+
+#zabytek-container {
+	width: 75%;
+	margin: 0 auto;
+}
+
+#zabytek-scroll {
+	overflow: hidden;
+	height: 100vh;
+	width: 100%;
+/*	margin-right: -16px;
+	padding-right: 16px;*/
+}
+
+::-webkit-scrollbar{
+	width: 0px;
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgba(0,0,0,0);
+}
+
+#zabytek-tlo {
+	position: relative;
+	z-index: 1003;
+	display: block;
+	margin-top: 7%;
+	width: 100%;
+	height: auto;
+	background-color: white;
+}
+
+#zabytek-foto {
+	width: 100%;
+	border: 0;
+}
+
+#zabytek-tytul {
+	text-align: center;
+}
+
+#zabytek-biale {
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	height: 75%;
+	width: 75%;
+	z-index: 1002;
+}
+
+#zabytek-opis {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.leaflet-top.leaflet-right {
+	z-index: 1004;
+	position: relative;
+}
